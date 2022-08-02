@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tags/
+Disallow: /author/
+Disallow: /register/
+Disallow: /login/
+Allow: /

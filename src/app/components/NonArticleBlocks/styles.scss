@@ -1,0 +1,149 @@
+@mixin breakpoint($size) {
+  @media only screen and (max-width: $size + px) {
+    @content;
+  }
+}
+.content {
+  img {
+    width: 100%;
+  }
+}
+
+.title__wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin: 12px 0 0;
+  @include breakpoint(767) {
+    // padding: 0 16px;
+  }
+  > div {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    > span {
+      margin-right: 12.5px;
+      margin-top: 1px;
+    }
+  }
+  // h2 {
+  //   margin: 0 0 1px;
+  //   line-height: 1.375;
+  // }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.35;
+    margin: 0 0 5px;
+    max-width: calc(100% - 100px);
+  }
+  p {
+    color: rgba(#000, 0.5);
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    max-width: 325px;
+    margin-bottom: 0;
+  }
+  &__brandvoice {
+    @include breakpoint(767) {
+      flex-direction: column;
+    }
+    > span {
+      @include breakpoint(767) {
+        display: none;
+      }
+    }
+    h3 {
+      @include breakpoint(767) {
+        order: 2;
+      }
+    }
+    > div {
+      @include breakpoint(767) {
+        order: 1;
+        margin: 0 0 10px;
+      }
+    }
+    &__ar {
+      > span {
+        margin-right: 0 !important;
+        margin-left: 12.5px !important;
+      }
+      > div {
+        margin-right: 12.5px !important;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  &__featured {
+    > div {
+      > span {
+        margin-top: 6.5px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.35;
+      }
+    }
+  }
+}
+
+.badge {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.357;
+  color: #c41923;
+  padding: 3px 5px;
+  background: rgba(196, 25, 35, 0.1);
+  // margin-left: auto;
+  margin-left: 12.5px;
+
+  &__featured {
+    margin-top: 10px;
+  }
+}
+
+.moveleft {
+  margin-left: 43px;
+  @include breakpoint(767) {
+    margin: 0;
+  }
+}
+
+.image {
+  height: 262px;
+  @media only screen and (max-width: 991px) {
+    height: 281px;
+    @include breakpoint(767) {
+      height: 192px;
+    }
+  }
+  &__featured {
+    height: 476px;
+    @media only screen and (max-width: 991px) {
+      height: 281px;
+      @include breakpoint(767) {
+        height: 192px;
+      }
+    }
+  }
+  &__brandvoice {
+    @include breakpoint(767) {
+      height: 162px;
+    }
+  }
+  &__list {
+    @include breakpoint(767) {
+      height: 250px;
+    }
+  }
+}

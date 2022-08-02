@@ -1,0 +1,32 @@
+.carousel {
+  > img {
+    height: 24px !important;
+    width: auto !important;
+    // top: 94px !important;
+    transform: translateY(-50%);
+    @media only screen and (max-width: 767px) {
+      z-index: 10;
+    }
+    &:first-of-type {
+      left: -40px;
+      @media only screen and (max-width: 767px) {
+        left: auto;
+        right: 75px;
+        top: calc(100% - 22px);
+      }
+    }
+    &:last-of-type {
+      right: -40px;
+      @media only screen and (max-width: 767px) {
+        right: 24px;
+        top: calc(100% - 22px);
+      }
+    }
+  }
+}
+
+.itemBrandvoiceWrapper {
+  @media only screen and (max-width: 767px) {
+    padding: 0 16px;
+  }
+}

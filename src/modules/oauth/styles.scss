@@ -1,0 +1,26 @@
+.container {
+  padding: 246px 0 193px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin: 0 0 14px;
+    letter-spacing: -0.3px;
+    line-height: 1.1875;
+  }
+  h2 {
+    color: #666666;
+    // font-weight: 300 !important;
+    margin: 0 0 50px;
+    font-size: 1rem;
+    line-height: 1.375;
+  }
+  a {
+    height: 35px;
+    width: 125px;
+    line-height: 35px;
+    border-radius: 0;
+    border-bottom: 2px solid #000000;
+    padding: 0 0 5px;
+  }
+}

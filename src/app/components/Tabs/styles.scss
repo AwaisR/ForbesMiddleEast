@@ -1,0 +1,107 @@
+.tab__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    cursor: pointer;
+    &:before,
+    &:after {
+      bottom: 0;
+      content: ' ';
+      height: 2px;
+      position: absolute;
+      transition: 300ms all ease-in-out;
+      width: calc(50% - 7px);
+      background: #d8d8d8;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+    > div {
+      height: 11px;
+      left: 50%;
+      top: calc(100% - 1.5px);
+      transform: translateX(-50%) rotateX(180deg);
+      transform-origin: top center;
+      width: 18px;
+      z-index: 2;
+      position: absolute;
+      > div {
+        background-color: #d8d8d8;
+        height: 11.5px;
+        top: 0;
+        width: 2px;
+        position: absolute;
+        transition: 300ms all ease-in-out;
+        &:first-child {
+          left: 0.5px;
+          transform: rotate(-45deg);
+          transform-origin: top left;
+        }
+        &:last-child {
+          right: 0.5px;
+          transform: rotate(45deg);
+          transform-origin: top right;
+        }
+      }
+    }
+  }
+  &__active {
+    &:before,
+    &:after {
+      background: #000 !important;
+    }
+    > div {
+      transform: translateX(-50%) rotateX(0deg) !important;
+      top: calc(100% - 1px) !important;
+      > div {
+        background: #000 !important;
+      }
+    }
+  }
+  &__border {
+    > div {
+      // &:first-child {
+      // 	left: 0;
+      // 	-webkit-transform: rotate(-45deg);
+      // 	-ms-transform: rotate(-45deg);
+      // 	transform: rotate(-45deg);
+      // 	-webkit-transform-origin: top left;
+      // 	-ms-transform-origin: top left;
+      // 	transform-origin: top left;
+      // 	background-color: #181716;
+      // 	height: 21px;
+      // 	left: -6px;
+      // }
+    }
+  }
+}
+
+.tab__content {
+  padding: 16px 0 21px;
+}
+// .tab-list {
+// 	border-bottom: 1px solid #ccc;
+// 	padding-left: 0;
+// }
+
+// .tab-list-item {
+// 	display: inline-block;
+// 	list-style: none;
+// 	margin-bottom: -1px;
+// 	padding: 0.5rem 0.75rem;
+// }
+
+// .tab-list-active {
+// 	background-color: white;
+// 	border: solid #ccc;
+// 	border-width: 1px 1px 0 1px;
+// }

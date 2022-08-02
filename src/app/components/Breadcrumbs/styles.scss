@@ -1,0 +1,10 @@
+.breadcrumb {
+  margin: 14px 0 8px !important;
+  &__link {
+    font-size: 0.8125rem;
+    line-height: 2.31;
+    font-weight: 300;
+    color: #808080;
+    text-transform: capitalize;
+  }
+}

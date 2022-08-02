@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="18px" viewBox="0 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.9333506,17.5292308 L5.9333506,8.99900128 L8.49290283,8.99900128 L8.83209877,6.05943696 L5.9333506,6.05943696 L5.93769927,4.58815672 C5.93769927,3.82147307 6.01688123,3.41066646 7.2138515,3.41066646 L8.81397932,3.41066646 L8.81397932,0.470769231 L6.25406471,0.470769231 C3.17919558,0.470769231 2.09692138,1.89677419 2.09692138,4.2948661 L2.09692138,6.05976987 L0.180246914,6.05976987 L0.180246914,8.99933419 L2.09692138,8.99933419 L2.09692138,17.5292308 L5.9333506,17.5292308 Z" id="path-1"></path>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-Editors-Pick" transform="translate(-1147.000000, -1286.000000)">
+            <g id="Facebook" transform="translate(1147.000000, 1286.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Shape" fill="#000000" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

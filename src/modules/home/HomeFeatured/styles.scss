@@ -1,0 +1,87 @@
+.content {
+  padding: 50px 0 29px;
+  @media only screen and (max-width: 767px) {
+    padding: 25px 0 0;
+  }
+}
+
+.h2 {
+  margin: 0 0 16px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 16px;
+    font-size: 1.125rem;
+  }
+}
+
+.forbes {
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-width: 1px 0;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      border-bottom: 0;
+      padding-bottom: 30px;
+      h6 {
+        margin: 0 0 16px;
+        font-size: 1rem;
+      }
+      ul {
+        li {
+          margin: 0 16px 0;
+        }
+      }
+    }
+  }
+  &__article {
+    margin: 0 0 25px;
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+      > div a > div {
+        &:first-child {
+          height: auto;
+        }
+        &:last-child {
+          padding: 0 16px !important;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    &__extra {
+      > div:first-of-type {
+        > div:first-child > div {
+          height: 262px;
+          @media only screen and (max-width: 767px) {
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs {
+  max-width: 310px;
+  margin: 0 auto 0 19px;
+  @media only screen and (max-width: 991px) {
+    max-width: 100%;
+    margin: 30px 0;
+    width: 100%;
+  }
+  @media only screen and (max-width: 767px) {
+    margin: 11px 0 0;
+  }
+}
+
+.featured__mobile {
+  > div {
+    > div {
+      &:last-child {
+        padding: 0 16px !important;
+      }
+    }
+  }
+}

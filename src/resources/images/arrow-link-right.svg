@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="10px" viewBox="0 0 5 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Arrows / Arrow Right 32px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M4.39628025,9.306844 L0.101647673,4.95390282 C-0.0338825578,4.81654988 -0.0338825578,4.59537341 0.101647673,4.45802047 L4.39628025,0.105079291 C4.53328044,-0.034038356 4.75671423,-0.0349207089 4.89518438,0.101843997 C5.03365453,0.23890282 5.03512448,0.462138115 4.89841829,0.600961644 L0.8486809,4.70596164 L4.89841829,8.81096164 C5.03512448,8.94978517 5.03365453,9.17302047 4.89518438,9.31007929 C4.82639029,9.37802047 4.73701677,9.411844 4.64734927,9.411844 C4.5562118,9.411844 4.46536833,9.376844 4.39628025,9.306844 Z" id="path-1"></path>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-Account" transform="translate(-989.000000, -289.000000)">
+            <g id="Group-8" transform="translate(932.000000, 202.000000)">
+                <g id="Group-5" transform="translate(0.000000, 81.000000)">
+                    <g id="Arrows-/-Arrow-Right-32px" transform="translate(57.000000, 6.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Icon" fill="#003399" transform="translate(2.500000, 4.705922) scale(-1, 1) translate(-2.500000, -4.705922) " xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

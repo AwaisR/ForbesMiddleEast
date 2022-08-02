@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Primary</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-/-Bookmarks" transform="translate(-1391.000000, -60.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Header">
+                <g id="Primary" transform="translate(248.000000, 16.000000)">
+                    <g transform="translate(1143.000000, 44.000000)" id="Search">
+                        <path d="M8.5,15 C12.0898509,15 15,12.0898509 15,8.5 C15,4.91014913 12.0898509,2 8.5,2 C4.91014913,2 2,4.91014913 2,8.5 C2,12.0898509 4.91014913,15 8.5,15 Z M8.5,17 C3.80557963,17 0,13.1944204 0,8.5 C0,3.80557963 3.80557963,0 8.5,0 C13.1944204,0 17,3.80557963 17,8.5 C17,13.1944204 13.1944204,17 8.5,17 Z M13.2295145,14.3377087 C12.9234952,14.0316893 12.9234952,13.5355339 13.2295145,13.2295145 C13.5355339,12.9234952 14.0316893,12.9234952 14.3377087,13.2295145 L18.7704855,17.6622913 L17.6622913,18.7704855 L13.2295145,14.3377087 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

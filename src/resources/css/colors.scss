@@ -1,0 +1,50 @@
+$color-white: #ffffff;
+$color-black: #000;
+
+$color-lists: #666666;
+$color-billionaires: #886f68;
+$color-innovation: #2561aa;
+$color-leadership: #857529;
+$color-money: #b2cfa2;
+$color-money-secondary: #628048;
+$color-consumer: #377e88;
+$color-industry: #b16122;
+$color-lifestyle: #5d1033;
+$color-featured: $color-white;
+$color-brandvoice: #c41923;
+$color-events: #48807c;
+$color-magazine: $color-white;
+
+$menu-colors-list: (
+  billionaires: $color-billionaires,
+  lists: $color-lists,
+  innovation: $color-innovation,
+  leadership: $color-leadership,
+  money: $color-money,
+  consumer: $color-consumer,
+  industry: $color-industry,
+  lifestyle: $color-lifestyle,
+  featured: $color-featured,
+  brandvoice: $color-brandvoice,
+  companies: $color-brandvoice,
+  events: $color-events,
+  magazines: $color-magazine,
+  magazine: $color-magazine
+);
+
+$home-section-colors-list: (
+  billionaires: $color-billionaires,
+  lists: $color-lists,
+  innovation: $color-innovation,
+  leadership: $color-leadership,
+  money: $color-money-secondary,
+  consumer: $color-consumer,
+  industry: $color-industry,
+  lifestyle: $color-lifestyle,
+  featured: $color-featured,
+  brandvoice: $color-brandvoice,
+  companies: $color-brandvoice,
+  events: $color-events,
+  magazines: $color-black,
+  magazine: $color-black
+);

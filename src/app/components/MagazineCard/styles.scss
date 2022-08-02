@@ -1,0 +1,122 @@
+.card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  &__featured {
+    width: 242px;
+    height: 324px;
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__ar {
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &:hover {
+    > div {
+      opacity: 1;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.59);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 500ms all;
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+  button {
+    max-width: calc(100% - 36px);
+    margin: 5px 0;
+  }
+}
+
+.mobile_buttons {
+  display: none;
+  button {
+    margin: 10px 0;
+  }
+  @media only screen and (max-width: 991px) {
+    display: block;
+  }
+}
+
+
+.title {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300 !important;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 15px 0 0;
+}
+.carousel {
+  min-height: 400px;
+  &__image {
+    img {
+      max-width: 313.7px;
+      display: block;
+      margin: auto;
+    }
+  }
+  > img {
+    height: 24px !important;
+    width: auto !important;
+    // top: 94px !important;
+    transform: translateY(-50%);
+    filter: invert(1);
+    &:first-of-type {
+      left: -40px;
+      @media only screen and (max-width: 768px) {
+        left: 40px;
+      }
+      @media only screen and (max-width: 767px) {
+        left: -15px;
+      }
+    }
+    &:last-of-type {
+      right: -40px;
+      @media only screen and (max-width: 768px) {
+        right: 40px;
+      }
+      @media only screen and (max-width: 767px) {
+        right: -15px;
+      }
+    }
+  }
+}
+
+.free__magazine{
+  background: red;
+  padding: 2px 6px;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+  left: 0;
+  font-size: 0.8rem;
+}
+
+.rtl{
+  direction: rtl;
+}
+
+
+.disabled_btn{
+  pointer-events: none;
+  opacity: 0.5;
+}

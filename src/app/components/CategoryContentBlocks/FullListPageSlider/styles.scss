@@ -1,0 +1,39 @@
+.item {
+  // max-width: 95%;
+  display: block;
+  // padding: 0 12.5px;
+  > div {
+    margin: 0 0 21px;
+    // @media only screen and (max-width: 767px) {
+    //   height: 192px;
+    // }
+  }
+  h3 {
+    @media only screen and (max-width: 991px) {
+      font-size: 1.065rem;
+    }
+    @media only screen and (max-width: 767px) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.carousel {
+  // width: 1175px;
+  // margin: auto;
+  // max-width: 90%;
+  > img {
+    height: 24px !important;
+    width: auto !important;
+    top: 94px !important;
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+    &:first-of-type {
+      left: -40px;
+    }
+    &:last-of-type {
+      right: -40px;
+    }
+  }
+}

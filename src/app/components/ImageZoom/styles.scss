@@ -1,0 +1,17 @@
+.imagezoom {
+  position: relative;
+  overflow: hidden;
+  transition: 500ms all;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 2s all ease-in-out;
+  }
+}

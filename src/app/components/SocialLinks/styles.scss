@@ -1,0 +1,19 @@
+.social {
+	&__logos {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			margin-left: 22px;
+			a {
+				transition: 500ms all ease-in-out;
+			}
+			&:hover {
+				a {
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}

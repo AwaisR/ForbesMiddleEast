@@ -1,0 +1,411 @@
+@import "../../../resources/css/colors.scss";
+@mixin breakpoint($size) {
+  @media only screen and (max-width: $size + px) {
+    @content;
+  }
+}
+
+.header {
+  background: #000;
+  height: 105px;
+  position: relative;
+  z-index: 100;
+  @include breakpoint(991) {
+    height: 65px;
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    align-items: flex-end;
+    // padding-bottom: 27px;
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+    direction: ltr !important;
+    @include breakpoint(991) {
+      align-items: center;
+      padding-bottom: 0;
+    }
+  }
+  &__ar {
+    > div {
+      direction: ltr !important;
+      padding: 0 50px;
+      @include breakpoint(991) {
+        padding: 0 20px;
+      }
+    }
+  }
+  &__logo {
+    height: 33px;
+    margin-bottom: 27px;
+    @include breakpoint(991) {
+      margin-bottom: 0;
+    }
+  }
+  &__light {
+    background: transparent;
+  }
+}
+
+.menu {
+  &__icons {
+    display: flex;
+    align-items: center;
+    direction: ltr !important;
+    img,
+    i,
+    > div {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    &__ar {
+      img,
+      i,
+      > div {
+        margin-left: 0;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__hamburger {
+    display: none;
+    margin-bottom: 27px;
+    @include breakpoint(991) {
+      margin-bottom: 0;
+    }
+    @include breakpoint(1120) {
+      display: block;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    transition: 300ms all ease-in-out;
+  }
+  &__div {
+    display: flex;
+    align-items: flex-end;
+    @include breakpoint(991) {
+      align-items: center;
+    }
+    img {
+      padding-bottom: 27px;
+      @include breakpoint(991) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__main,
+  &__sub {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    li {
+      &:before {
+        background: $color-lists;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: 3px;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 500ms all ease-in-out;
+      }
+      &:hover {
+        &:before {
+          // width: 100%;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      @each $key, $val in $menu-colors-list {
+        &[data-category="#{$key}"] {
+          &:before {
+            background: #{$val};
+          }
+          &:hover {
+            a {
+              color: #{$val};
+            }
+          }
+        }
+      }
+      a {
+        display: block;
+        padding: 10px 15px 27px;
+        color: rgba(255, 255, 255, 1);
+        font-size: 1rem;
+        line-height: 1.375;
+        opacity: 1;
+        @include breakpoint(1340) {
+          font-size: 0.9rem;
+          padding: 10px;
+          padding-bottom: 27px;
+        }
+        @include breakpoint(991) {
+          padding-bottom: 10px;
+        }
+        // @media only screen and (max-width: 1225px) {
+        //   font-size: 0.9rem;
+        //   padding: 10px;
+        //   padding-bottom: 27px;
+        // }
+      }
+      button {
+        height: 26px;
+        opacity: 0.4;
+        border: 1px solid $color-white;
+        background: none;
+        border-radius: 0;
+        margin: 0;
+        padding: 0 15px;
+        line-height: 1;
+      }
+    }
+    &__light {
+      li {
+        &:before {
+          background: $color-white;
+        }
+        a {
+          color: rgba($color-white, 0.4);
+          &:hover {
+            color: $color-white !important;
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    @include breakpoint(1120) {
+      li {
+        a {
+          font-size: 1rem;
+        }
+      }
+      li:nth-child(n + 8) {
+        display: none;
+      }
+    }
+    @include breakpoint(768) {
+      li:nth-child(n + 6) {
+        display: none;
+      }
+    }
+    @include breakpoint(767) {
+      li {
+        display: none;
+      }
+    }
+    &__active {
+      &__light {
+        &::before {
+          background: $color-white !important;
+          height: 1px !important;
+        }
+        a {
+          color: $color-white !important;
+        }
+        &:before {
+          // width: 100% !important;
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+      }
+      &:before {
+        // width: 100% !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+      @each $key, $val in $menu-colors-list {
+        &[data-category="#{$key}"] {
+          &:before {
+            background: #{$val};
+          }
+          a {
+            color: #{$val};
+          }
+        }
+      }
+    }
+  }
+  &__sub {
+    align-items: center;
+    padding: 0 0 7px;
+    direction: ltr !important;
+    @include breakpoint(991) {
+      display: none;
+    }
+    li {
+      margin-left: 19px;
+      &:before {
+        display: none;
+      }
+      a {
+        font-size: 0.875rem;
+        opacity: 0.7 !important;
+        padding: 0 !important;
+      }
+    }
+    &__ar {
+      li {
+        margin: 0 19px 0 0;
+      }
+    }
+  }
+  &__dropdown {
+    @include breakpoint(991) {
+      padding: 0;
+      display: none;
+    }
+    &__container {
+      padding-top: 39px;
+      padding-bottom: 54px;
+    }
+
+    &__light {
+      background: transparent;
+      li a {
+        color: rgba($color-white, 0.4);
+        &:hover {
+          color: $color-white !important;
+        }
+      }
+    }
+    a {
+      color: $color-white;
+    }
+    &__active {
+      @each $key, $val in $menu-colors-list {
+        &[data-category="#{$key}"] {
+          a:hover {
+            color: #{$val};
+          }
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      a {
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.785;
+      }
+    }
+  }
+}
+
+.modal {
+  &__container {
+    max-width: 256px;
+    margin: auto;
+  }
+  &__title,
+  &__footer {
+    text-align: center;
+    margin: 0 0 40px;
+    h4 {
+      margin: 0 0 18px;
+    }
+    p {
+      margin: 0;
+      color: rgba(#000, 0.4);
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+  &__content {
+    p {
+      margin: 0;
+      text-align: right;
+    }
+  }
+  &__footer {
+    margin: 0;
+    ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 22px 0 0;
+      justify-content: center;
+    }
+    li {
+      height: 53px;
+      width: 53px;
+      border: 1.1px solid rgba(102, 102, 102, 0.21);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      margin: 0 11px;
+      cursor: pointer;
+    }
+  }
+}
+
+.recent__item {
+  display: flex;
+  margin: 0 0 27px;
+  &__image {
+    width: 175px !important;
+    height: 110px !important;
+    object-fit: cover;
+    margin-right: 17px;
+    flex: 1 0 175px;
+  }
+  h6 {
+    font-size: 0.875rem;
+    letter-spacing: -0.21px;
+    line-height: 1.36;
+    margin: 0;
+    color: #fff;
+  }
+}
+
+.mm {
+  &__image {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      height: 35px;
+      margin: 0 0 50px;
+      @include breakpoint(767) {
+        display: none;
+      }
+    }
+    a {
+      color: #fff;
+      font-size: 1rem;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      a {
+        padding: 0 25px;
+      }
+    }
+  }
+  &__menu {
+    ul {
+      background: none;
+    }
+  }
+}

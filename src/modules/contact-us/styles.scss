@@ -1,0 +1,71 @@
+.container {
+  padding: 0 0 70px;
+}
+.h1 {
+  margin: 45px 0 55px;
+}
+
+.form {
+  margin: 0 0 67px;
+}
+
+.infoBox {
+  margin: 0 0 25px;
+  h2 {
+    letter-spacing: -0.27px;
+    line-height: 1.33;
+    padding: 0 0 10px;
+    margin: 0 0 11px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  &__phone,
+  &__email {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px;
+    i {
+      margin-right: 17px;
+    }
+    a {
+      opacity: 0.8;
+      color: #000000;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    &__ar {
+      i {
+        margin: 0 0 0 17px;
+      }
+    }
+  }
+  &__email {
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+.map {
+  &__image {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 0 0 27px;
+    img {
+      width: 100%;
+    }
+    a {
+      width: auto;
+      margin: 0 0 27px;
+    }
+  }
+  h2 {
+    margin: 0 0 16px;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: #000;
+    font-weight: 300;
+  }
+}

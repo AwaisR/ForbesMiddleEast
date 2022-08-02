@@ -1,0 +1,36 @@
+.container {
+  background-color: #191919;
+  padding: 41px 0;
+  h2 {
+    color: #fff !important;
+    margin: 0 0 43px !important;
+  }
+}
+.limit {
+  width: 1175px;
+  margin: auto;
+  max-width: 90%;
+}
+.content {
+  // max-width: calc(100% - 26px);
+  margin: auto;
+  display: block !important;
+  > img {
+    width: 100%;
+  }
+}
+
+.carousel {
+  > img {
+    height: 24px !important;
+    width: auto !important;
+    // top: 94px !important;
+    transform: translateY(-50%);
+    &:first-of-type {
+      left: -40px;
+    }
+    &:last-of-type {
+      right: -40px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.brandvoice {
+  &__about {
+    margin-left: 22px;
+    max-width: 301px;
+    @media only screen and (max-width: 991px) {
+      max-width: 100%;
+      margin: 10px 0 30px;
+    }
+    p {
+      color: rgba(#000, 0.8);
+      line-height: 1.71;
+      margin: 0 0 30px;
+    }
+  }
+  &__contributor {
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px;
+    > span {
+      margin-right: 17px;
+    }
+    h6 {
+      margin: 0;
+    }
+    &__ar {
+      > span {
+        margin-right: 0;
+        margin-left: 17px;
+      }
+    }
+  }
+}
+.article {
+  &__item {
+    margin: 0 0 26px;
+  }
+  &__banner {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.5);
+    }
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      margin: 0 0 16px;
+      height: 740px;
+      display: flex;
+      align-items: flex-end;
+      margin: -105px 0 38px;
+      padding-bottom: 36px;
+    }
+    &__text {
+      z-index: 2;
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    h2 {
+      margin: 0;
+      color: #fff !important;
+    }
+    li {
+      padding: 0 15px 0 0;
+      img {
+        filter: invert(0.3);
+      }
+    }
+  }
+  &__avatar {
+    display: flex;
+    align-items: flex-start;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    > span {
+      margin-top: 46px;
+      margin-right: 23px;
+      @media only screen and (max-width: 767px) {
+        margin: 0 0 10px;
+      }
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      margin: -2px 0 8px;
+      color: rgba(#fff, 0.8);
+      font-weight: 300;
+    }
+    ul {
+      margin: 0 0 24px;
+    }
+    &__ar {
+      > span {
+        margin-right: 0 !important;
+        margin-left: 23px;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 12px 0 57px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  i {
+    font-size: 40px;
+  }
+}
+
+.breadcrumb {
+  margin: 0 0 3px;
+  a,
+  span {
+    color: rgba(#fff, 0.5) !important;
+  }
+}
+
+.h6 {
+  padding: 0 0 9px;
+  margin: 0 0 18px;
+  border-bottom: 1px solid #000000;
+  text-transform: capitalize;
+}

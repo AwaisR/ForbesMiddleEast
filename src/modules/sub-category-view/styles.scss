@@ -1,0 +1,21 @@
+.article {
+  &__item {
+    margin: 0 0 27px;
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+}
+
+.container {
+  padding: 12px 0 57px;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  i {
+    font-size: 40px;
+  }
+}

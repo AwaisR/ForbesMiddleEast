@@ -1,0 +1,59 @@
+.container {
+  color: #000;
+  p {
+    color: #000;
+    margin: 0 0 22px;
+  }
+  h1 {
+    margin: 0 0 21px;
+  }
+}
+
+.button {
+  &__changepassword {
+    width: 105px !important;
+  }
+  &__save {
+    width: 130px !important;
+  }
+}
+
+.wrap {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  &__second {
+    margin-top: 50px;
+  }
+}
+
+.subscription {
+  p {
+    margin: 0 0 10px;
+    &:not(:first-child) {
+      color: #666;
+      margin: 0 0 12px;
+    }
+  }
+}
+
+.avatar_profile{
+  box-shadow: 0 0 18px rgba(#000, 0.15);
+}
+
+.avatar__camera {
+  position: absolute;
+  cursor: pointer;
+  color: black;
+  background: #e6e6e6;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 28px;
+  font-size: 12px;
+  z-index: 2;
+  right: 5px;
+  top: 0;
+}

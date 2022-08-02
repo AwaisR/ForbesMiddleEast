@@ -1,0 +1,106 @@
+.header {
+  margin: 0 0 27px;
+  display: flex;
+  align-items: center;
+  h1,
+  h2 {
+    margin: 0;
+  }
+  h2 {
+    margin: 0 20px 0 0;
+  }
+}
+.list {
+  display: block;
+  min-height: 120px;
+  &__item {
+    position: relative;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.21);
+    p,
+    h3 {
+      margin: 0;
+      @media only screen and (max-width: 567px) {
+        text-align: left;
+      }
+    }
+  }
+  &__date,
+  &__price,
+  &__cancel {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.56;
+  }
+  &__date {
+    text-align: right;
+    color: #666;
+    @media only screen and (max-width: 768px) {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+  &__cancel {
+    display: inline;
+    color: #003399;
+    cursor: pointer;
+  }
+  &__price {
+    color: #000;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__description {
+    font-size: 0.75rem;
+    line-height: 1.58;
+    color: #666;
+    @media only screen and (max-width: 991px) {
+      margin-top: 10px !important;
+    }
+  }
+}
+
+.subscriptions,
+.orders {
+  margin: 0 0 30px;
+}
+
+.modal {
+  h6 {
+    margin: 0 0 9px;
+  }
+  p {
+    line-height: 1.57;
+    color: #666;
+    max-width: 75%;
+    margin: 0 0 41px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      height: 35px;
+      line-height: 1;
+      width: auto;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-left: 16px;
+    }
+  }
+}
+
+.price__strike{
+  display: inline-block;
+  text-decoration: line-through;
+  font-size: 0.875rem;
+  line-height: 1.56;
+  opacity: 0.5;
+}
+
+.stikeit{
+  text-decoration: line-through;
+  opacity: 0.5;
+}

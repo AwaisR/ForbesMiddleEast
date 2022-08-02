@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Misc / Close Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search" transform="translate(-1278.000000, -45.000000)">
+            <g id="Misc-/-Close-Rectangle" transform="translate(1278.000000, 45.000000)">
+                <g>
+                    <rect id="Rectangle" fill="#E6E6E6" x="0" y="0" width="30" height="30"></rect>
+                    <g id="Icons-/-14px-/-Close" transform="translate(8.000000, 8.000000)">
+                        <g id="close-line">
+                            <polygon id="Path" points="0 0 14 0 14 14 0 14"></polygon>
+                            <polygon id="Path" fill="#000000" fill-rule="nonzero" points="7 6.17516667 9.8875 3.28766667 10.7123333 4.1125 7.82483333 7 10.7123333 9.8875 9.8875 10.7123333 7 7.82483333 4.1125 10.7123333 3.28766667 9.8875 6.17516667 7 3.28766667 4.1125 4.1125 3.28766667"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,198 @@
+@import "../../../resources/css/colors.scss";
+
+.divider {
+  padding: 0 0 50px;
+  @media only screen and (max-width: 767px) {
+    padding: 0 0 18px;
+  }
+
+  > div {
+    &:not(:last-child) {
+    }
+  }
+
+  &__content {
+    &:not(:last-child) {
+      padding: 0 0 25px;
+      @media only screen and (max-width: 767px) {
+        padding: 0;
+      }
+    }
+  }
+}
+.title {
+  border-top: 2px solid #000;
+  a {
+    padding: 22px 0 26px;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 767px) {
+      padding: 8px 16px;
+      justify-content: space-between;
+      i {
+        transform: scale(0.8);
+      }
+      h2 {
+        line-height: 2.11;
+      }
+    }
+    &:hover {
+      h2 {
+        padding-right: 25px;
+      }
+    }
+  }
+  h2 {
+    padding-right: 14px;
+    transition: 300ms all;
+    color: #000 !important;
+    margin: 0;
+  }
+  g {
+    stroke: #000;
+  }
+  @each $key, $val in $home-section-colors-list {
+    &[data-category="#{$key}"] {
+      border-top: 2px solid #{$val};
+      h2 {
+        color: #{$val} !important;
+      }
+      g {
+        stroke: #{$val};
+      }
+    }
+  }
+  &__ar {
+    i {
+      transform: scaleX(-1) scale(0.8) !important;
+    }
+    h2 {
+      padding-right: 0;
+      padding-left: 14px;
+    }
+  }
+}
+
+.showMore {
+  font-size: 16px;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding: 0 16px;
+  margin-top: 6px;
+  svg {
+    margin-left: 2px;
+  }
+  &__ar {
+    i {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.grid {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  &__large,
+  &__small {
+    width: 66.66%;
+    float: left;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    &__right {
+      float: right;
+    }
+  }
+  &__large {
+    margin: 0 0 20px;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0 27px;
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+    }
+    @media only screen and (max-width: 767px) {
+      border-bottom: 1px solid #e2e2e2;
+      padding: 0;
+      margin: 0 0 13.5px;
+    }
+  }
+  &__small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+    > div {
+      flex: 0 0 48%;
+      margin: 0 0 27px;
+      align-items: flex-start;
+      @media only screen and (max-width: 768px) {
+        flex: 0 0 100%;
+      }
+      p {
+        display: none;
+      }
+      h4 {
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: -0.21px;
+        line-height: 21px;
+      }
+    }
+    &__image {
+      height: 100px !important;
+    }
+  }
+  &__sidebar {
+    width: 33.33%;
+    float: right;
+    padding-left: 3%;
+    &__right {
+      float: left;
+      padding-left: 0;
+      padding-right: 3%;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    > div {
+      margin: 0 0 27px;
+      @media only screen and (max-width: 768px) {
+        flex: 0 0 48%;
+      }
+      @media only screen and (max-width: 767px) {
+        flex: 0 0 100%;
+        border-bottom: 1px solid #e2e2e2;
+        // padding: 0 0 13.5px;
+        margin: 0 0 13.5px;
+      }
+    }
+  }
+  &__divider {
+    bottom: 0;
+    top: 0;
+    right: 31.8%;
+    border-left: 1px solid #e2e2e2;
+    position: absolute;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+    &__right {
+      left: 31.8%;
+      right: auto;
+    }
+  }
+}

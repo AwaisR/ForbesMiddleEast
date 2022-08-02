@@ -1,0 +1,26 @@
+.h6 {
+  padding: 0 0 9px;
+  margin: 0 0 18px;
+  border-bottom: 1px solid #000000;
+  text-transform: capitalize;
+  @media only screen and (max-width: 767px) {
+    padding: 0 16px 10px;
+  }
+}
+
+.popular {
+  margin-left: 22px;
+  max-width: 300px;
+  @media only screen and (max-width: 991px) {
+    max-width: 100%;
+    margin: 0 0 50px;
+  }
+  &__ar {
+    margin-left: 0;
+    margin-right: 22px;
+    @media only screen and (max-width: 991px) {
+      max-width: 100%;
+      margin: 0 0 50px;
+    }
+  }
+}

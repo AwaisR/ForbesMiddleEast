@@ -1,0 +1,70 @@
+.carousel {
+  margin: 0 0 32px;
+  width: 100%;
+  @media only screen and (max-width: 560px) {
+    margin: 0 !important;
+  }
+  > img {
+    height: 24px !important;
+    width: auto !important;
+    top: 50% !important;
+    z-index: 10;
+    &:first-of-type {
+      left: -20px;
+      @media only screen and (max-width: 560px) {
+        left: -8px;
+      }
+    }
+    &:last-of-type {
+      right: -20px;
+      @media only screen and (max-width: 560px) {
+        right: -8px;
+      }
+    }
+  }
+  &__longread {
+    margin: 23px 0;
+    > img {
+      height: 65px !important;
+      width: 65px !important;
+      top: 200px !important;
+      z-index: 10;
+      opacity: 1;
+      transition: 300ms all;
+      &:hover {
+        opacity: 0.5;
+      }
+      &:first-of-type {
+        left: 30px;
+      }
+      &:last-of-type {
+        right: 30px;
+      }
+    }
+  }
+  &__image {
+    img {
+      height: 422px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      @media only screen and (max-width: 767px) {
+        height: auto;
+      }
+    }
+    &__longread {
+      margin: 0 0 6px;
+      img {
+        height: 498px;
+      }
+    }
+  }
+  &__paragraph {
+    color: #808080;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 2.31;
+    display: block;
+    margin: 6px 0 0;
+  }
+}

@@ -1,0 +1,27 @@
+.magazine {
+  > div {
+    @media only screen and (max-width: 767px) {
+      max-width: 280px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  img {
+    width: 100%;
+    // margin: 0 0 21px;
+  }
+  h3 {
+    margin: 21px 0 9px !important;
+  }
+  p {
+    margin: 0 0 30px;
+    text-align: center;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    letter-spacing: -0.26px;
+    line-height: 1.4117;
+  }
+  button {
+    margin: 0 0 20px;
+  }
+}

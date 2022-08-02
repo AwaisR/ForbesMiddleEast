@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="21px" viewBox="0 0 11 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.25609713,21.5057692 L7.25609713,11.0404414 L10.386261,11.0404414 L10.8010753,7.43403145 L7.25609713,7.43403145 L7.26141526,5.62898857 C7.26141526,4.68838131 7.35824958,4.18438246 8.82206541,4.18438246 L10.7789164,4.18438246 L10.7789164,0.577564103 L7.64830936,0.577564103 C3.88794687,0.577564103 2.56439678,2.32706092 2.56439678,5.26916443 L2.56439678,7.43443988 L0.220430108,7.43443988 L0.220430108,11.0408498 L2.56439678,11.0408498 L2.56439678,21.5057692 L7.25609713,21.5057692 Z" id="path-1"></path>
+    </defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" transform="translate(-639.000000, -521.000000)">
+            <g id="Popup" transform="translate(420.000000, 142.000000)">
+                <g id="Group-6" transform="translate(172.000000, 41.000000)">
+                    <g id="Group-5" transform="translate(26.000000, 322.000000)">
+                        <g id="Group-3">
+                            <g id="Facebook" transform="translate(20.940860, 15.458333)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="Shape" fill="#425993" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

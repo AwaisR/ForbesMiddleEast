@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Longread" transform="translate(-30.000000, -2686.000000)" stroke="#FFFFFF">
+            <g id="Gallery" transform="translate(0.000000, 2473.000000)">
+                <g id="Group" transform="translate(30.000000, 213.000000)">
+                    <rect id="Rectangle" stroke-opacity="0.12890625" fill-opacity="0.11" fill="#FFFFFF" x="0.5" y="0.5" width="64" height="64" rx="32"></rect>
+                    <polyline id="Right-Copy" stroke-width="1.71428571" transform="translate(32.000000, 33.000000) scale(-1, 1) translate(-32.000000, -33.000000) " points="26 21 38 33 26 45"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
